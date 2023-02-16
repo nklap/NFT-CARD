@@ -1,0 +1,100 @@
+.container {
+    height: 100vh;
+    background-color: #0D192C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .nftcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 302px;
+    height: 575px;
+    background-color: #15263F;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.container .nftcard .nftcard-cover {
+    background-image: url(./assets/images/image-equilibrium.jpg);
+    border-radius: 15px;
+    width: 302px;
+    height: 302px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.container.nftcard .nftcard-cover:hover {
+    transform: rotateY(180deg);
+}
+
+.container .nftcard .nftcard-body :first-child {
+    color: white;
+    font-size: 22px;
+    font-family: Outfit;
+}
+
+.container .nftcard .nftcard-body :first-child:hover {
+    color: Cyan;
+    cursor: pointer;
+}
+
+.container .nftcard .nftcard-body :last-child {
+    color: #8BACD9;
+    font-family: Outfitregular;
+}
+
+.container .nftcard .nftcard-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .nftcard .nftcard-info .etherium {
+    font-family: Outfitregular;
+    color: #00FFF8;
+    background-image: url(./assets/images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    padding-left: 16px;
+}
+
+.container .nftcard .nftcard-info .clock {
+    font-family: Outfitregular;
+    color: #8BACD9;
+    background-image: url(./assets/images/icon-clock.svg);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.container .nftcard .nftcard-footer {
+    border-top: solid #2E405A 1px;
+    padding-top: 15px;
+    color: white;
+    font-family: Outfitl
+}
+
+.container .nftcard .nftcard-footer .about {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container .nftcard .nftcard-footer .about img {
+    width: 33px;
+    height: 33px;
+    border: solid 1px white;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.container .nftcard .nftcard-footer .about :last-child {
+    padding-left: 5px;
+}
+
+.container .nftcard .nftcard-footer .about :last-child:hover {
+    color: Cyan;
+    cursor: pointer;
+}
